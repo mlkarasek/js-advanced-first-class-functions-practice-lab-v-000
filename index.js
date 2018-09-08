@@ -15,3 +15,9 @@ return drivers.slice().sort(function(h, l) {
   return h.revenue - l.revenue;
 })
 }
+
+function driversByName(drivers) {
+  retun drivers.slice().sort(function(a,b) {
+    return a.name.localeCompare(b.name);
+  })
+}
