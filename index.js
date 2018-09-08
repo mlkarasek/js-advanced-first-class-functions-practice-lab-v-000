@@ -11,13 +11,13 @@ function logDriversByHometown(drivers, hometown) {
 }
 
 function driversByRevenue(drivers) {
-return drivers.slice().sort(function(h, l) {
-  return h.revenue - l.revenue;
-})
+  return drivers.slice().sort(function(h, l){
+    return h.revenue - l.revenue;
+  });
 }
 
 function driversByName(drivers) {
-  retun drivers.slice().sort(function(a,b) {
+  return drivers.slice().sort(function(a,b){
     return a.name.localeCompare(b.name);
-  })
+  });
 }
